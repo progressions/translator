@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "translator"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{TODO: Translate strings in Google Translate}
+    gem.description = %Q{TODO: Takes a set of keys in Yaml format and translates them through Google Translate.}
     gem.email = "progressions@gmail.com"
     gem.homepage = "http://github.com/progressions/translator"
     gem.authors = ["Jeff Coleman"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "sishen-rtranslate", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
