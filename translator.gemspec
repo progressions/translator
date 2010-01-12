@@ -27,7 +27,8 @@ Gem::Specification.new do |s|
      "lib/translator.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/translator_spec.rb"
+     "spec/translator_spec.rb",
+     "translator.gemspec"
   ]
   s.homepage = %q{http://github.com/progressions/translator}
   s.rdoc_options = ["--charset=UTF-8"]
