@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "en.yml",
      "lib/translator.rb",
+     "progressions-translator.gemspec",
      "spec/spec.opts",
      "spec/spec_helper.rb",
      "spec/translator_spec.rb",
