@@ -78,6 +78,7 @@ module Translator
         write_content(destination, new_content)
         clear_all_keys
       end
+      validate_output(destination)
     end
     
     def write_content(destination, content)
@@ -129,6 +130,10 @@ module Translator
     end
     
     def self.all_source_files
+      raise "Define in child"
+    end
+    
+    def validate_output(filename)
       raise "Define in child"
     end
     
@@ -237,6 +242,10 @@ module Translator
     end
     
     def parse_template(path)
+      YAML.load_file(path)
+    end
+    
+    def validate_output(path)
       YAML.load_file(path)
     end
     
