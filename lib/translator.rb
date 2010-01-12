@@ -208,6 +208,13 @@ module Translator
       value.gsub!(/\((2)\)/, "{2}")
       value.gsub!("（0）", "{0}")
       
+      unless value =~ /\"$/
+        value = "#{value}\""
+      end
+      unless value =~ /^\"/
+        value = "#\"{value}"
+      end
+      
       value.strip
     end
     
