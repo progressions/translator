@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "translator"
-    gem.summary = %Q{TODO: Translate strings in Google Translate}
-    gem.description = %Q{TODO: Takes a set of keys in Yaml format and translates them through Google Translate.}
+    gem.summary = %Q{Translate strings in Google Translate}
+    gem.description = %Q{Takes a set of keys in Yaml format and translates them through Google Translate.}
     gem.email = "progressions@gmail.com"
     gem.homepage = "http://github.com/progressions/translator"
     gem.authors = ["Jeff Coleman"]
