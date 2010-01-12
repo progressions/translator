@@ -98,7 +98,7 @@ module Translator
       month = now.month
       year = now.year
       
-      timestamp = "#{date}/#{month}/#{year}"
+      timestamp = "#{month}/#{date}/#{year}"
       output = []
       output << "# "
       output << "# Keys translated automatically on #{timestamp}."
