@@ -11,7 +11,7 @@ begin
     gem.homepage = "http://github.com/progressions/translator"
     gem.authors = ["Jeff Coleman"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
-    gem.add_development_dependency "sishen-rtranslate", ">= 1.2.9"
+    gem.add_runtime_dependency "sishen-rtranslate", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -23,6 +23,7 @@ require 'spec/rake/spectask'
 Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.libs << 'lib' << 'spec'
   spec.spec_files = FileList['spec/**/*_spec.rb']
+  spec.spec_opts = ['-c']
 end
 
 Spec::Rake::SpecTask.new(:rcov) do |spec|

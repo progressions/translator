@@ -1,6 +1,10 @@
 = translator
 
-Description goes here.
+Finds English language translation keys which have not been translated 
+and translates them through Google Translate.
+
+Usage: 
+  Translator::Yaml.new(:source => 'en.yml', :destination => 'output.yml).translate
 
 == Note on Patches/Pull Requests
  
@@ -14,4 +18,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Jeff Coleman. See LICENSE for details.
+Copyright (c) 2010 Capital Thought. See LICENSE for details.
